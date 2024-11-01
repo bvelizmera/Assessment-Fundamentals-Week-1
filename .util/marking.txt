@@ -14,11 +14,15 @@ Level-1/task_one.py:14:21: W0621: Redefining name 'basket' from outer scope (lin
 Level-2/task_two.py:23:0: C0301: Line too long (149/100) (line-too-long)
 Level-2/task_two.py:12:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
 ************* Module task_three
-Level-3/task_three.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer scope (line 12) (redefined-outer-name)
-Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
-Level-3/task_three.py:12:4: C0103: Constant name "receipt_string" doesn't conform to UPPER_CASE naming style (invalid-name)
+Level-3/task_three.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
+Level-3/task_three.py:21:0: C0301: Line too long (116/100) (line-too-long)
+Level-3/task_three.py:22:0: C0303: Trailing whitespace (trailing-whitespace)
+Level-3/task_three.py:27:0: C0303: Trailing whitespace (trailing-whitespace)
+Level-3/task_three.py:7:0: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:7:21: W0621: Redefining name 'receipt_string' from outer scope (line 31) (redefined-outer-name)
+Level-3/task_three.py:21:11: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+Level-3/task_three.py:31:4: C0103: Constant name "receipt_string" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.79/10 (previous run: 8.79/10, +0.00)
+Your code has been rated at 8.41/10 (previous run: 8.41/10, +0.00)
 
