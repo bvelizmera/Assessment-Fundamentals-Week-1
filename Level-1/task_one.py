@@ -8,13 +8,29 @@ basket = []
 
 
 def add_to_basket(item: dict) -> list:
+    """This function will add the items to the basket"""
     basket.append(item)
     return basket
-
-
 def generate_receipt(basket: list) -> str:
-    return  # return the receipt string
+    """It will generate a receipt to be printed later on"""  
+    receipt = ""
+    total_price = 0
+    if len(basket) == 0:
+        return "Basket is empty"
+    for item in basket:
+        name = item["name"]
+        price = item["price"]
+        total_price += price
+        receipt += f"{name} - {convert_price_to_str(price)}\n"
+    return  receipt + f"Total: £{total_price:.2f}"# return the receipt string
 
+
+def convert_price_to_str(price:float) -> str:
+    """This function converts the prices to a string or to free if value is 0"""
+    if price == 0:
+        return "Free"
+
+    return f"£{price:.2f}"
 
 if __name__ == "__main__":
     add_to_basket({
